@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --aamas-ivory: #F7F5F0; /* main background */
+  --aamas-deep: #17191C; /* deep charcoal sections */
+  --aamas-graphite: #25282B; /* secondary dark */
+  --aamas-champagne: #D4A24C; /* primary gold */
+  --aamas-antique: #A8752A; /* hover gold */
+  --aamas-charcoal: #1B1D1F; /* main text */
+  --aamas-body: #4F5357; /* body text */
+  --aamas-secondary: #6B6F73; /* secondary text */
+  --aamas-border: #D8C29A; /* soft gold borders */
+  --aamas-white: #FFFFFF;
+}
+
+/* Utility helpers */
+.aamas-smooth { transition: all 200ms ease-out; }
+
+html,body,#root{height:100%;}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:var(--aamas-charcoal); background:var(--aamas-ivory);}
+
+.smooth-scroll{scroll-behavior:smooth}
+
+.fade-up{transform:translateY(8px);opacity:0;animation:fadeUp .6s ease forwards}
+@keyframes fadeUp{to{transform:none;opacity:1}}
